@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Google</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
 
     <style>
         .cover {
@@ -33,22 +35,6 @@
             padding: 15px 20px 0px 0px
         }
 
-        .box {
-            width: 600px;
-            height: 50px;
-            margin: auto;
-            display: block;
-            border-radius: 50px;
-            border: 1px solid #C0C0C0;
-            padding-left: 50px;
-            font-size: 20px;
-
-            background-image: url("6-cutout.png");
-            background: ;
-            background-position: 5px center;
-
-
-        }
 
         .btn-under {
             border: 0px;
@@ -69,67 +55,100 @@
             margin-bottom: 30px;
         }
 
-        .base {
+        .input {
+            width: 600px;
+            height: 50px;
+            margin: auto;
+            display: block;
+            border-radius: 50px;
+            border: 1px solid #C0C0C0;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+
+        .first {
+            position: relative;
+            left: 95px;
+            bottom: 37px;
+            color: #5f6367;
+        }
+
+        .second {
+            position: relative;
+            left: 665px;
+            bottom: 37px;
+            color: blue;
+            font-size: 20px;
+        }
+
+        .third {
+            position: relative;
+            left: 600px;
+            bottom: 37px;
+            color: #5f6367;
+            font-size: 20px;
+        }
+
+        .inputbase {
             width: 800px;
             margin: auto;
         }
 
         .btnsubmit {
-            width: 500px;
-            margin: auto;
-            margin-top: 30px;
-        }
-        .btnsubmit1 {
-            margin-left: 120px;
-            padding: 10px 15px 10px 15px;
-            font-size: 15px;
-            border-radius: 3px;
-        }
-        .btnsubmit2 {
-            margin-left: 10px;
-            padding: 10px 15px 10px 15px;
-            font-size: 15px;
-            border-radius: 3px;
-        }
-        .#drop_the_text input{
-            background: whitesmoke;
-            background-image: url("6-cutout.png");
-            background-position: 5px center;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
         }
 
+        .btnsubmit1 {
+            margin-left: 265px;
+            padding: 10px 15px 10px 15px;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color:
+        }
+
+        .btnsubmit2 {
+            margin-right: 260px;
+            padding: 10px 15px 10px 15px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
 
     </style>
+    <script>
+    </script>
 </head>
 <body>
 <header>
     <div class="cover">
         <div>
-            <button class="btn_all btn1">Google 정보</button>
-            <button class="btn_all btn2">스토어</button>
+            <button class="btn_all btn1" type="button" onclick="location.href='https://about.google/?fg=1&utm_source=google-KR&utm_medium=referral&utm_campaign=hp-header'">Google 정보</button>
+            <button class="btn_all btn2" type="button" onclick="location.href='https://store.google.com/KR?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ko-KR'">스토어</button>
         </div>
         <div>
-            <button class="btn_all btn3">Gmail</button>
-            <button class="btn_all btn4">이미지</button>
+            <button class="btn_all btn3" type="button" onclick="location.href='https://mail.google.com/mail/u/0/'">Gmail</button>
+            <button class="btn_all btn4" type="button" onclick="location.href='https://www.google.co.kr/imghp?hl=ko&ogbl'">이미지</button>
         </div>
     </div>
 </header>
 
 <article>
     <div class="google"></div>
-    <div class="base">
-        <div id="drop_the_text">
-            <input type="text" class="box">
-        </div>
+    <div class="inputbase">
+        <form action="https://www.google.com/search" method="GET" class="inputadd">
+            <input type="text" class="input">
+            <i class="fas fa-search first"></i>
+            <i class="fas fa-microphone second"></i>
+            <i class="fas fa-keyboard third"></i>
+        </form>
         <div class="btnsubmit">
             <button class="btn-under btnsubmit1">Google 검색</button>
-            <button class="btn-under btnsubmit2">I'm Feeling Lucky</button>
+            <button class="btn-under btnsubmit2" type="button" onclick="location.href='https://www.google.co.kr/imghp?hl=ko&ogbl'">I'm Feeling Lucky</button>
         </div>
     </div>
-
-
 </article>
 
-
-<footer></footer>
+<footer>
 </body>
 </html>
